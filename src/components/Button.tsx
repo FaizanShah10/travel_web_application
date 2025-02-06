@@ -1,21 +1,22 @@
-import { LuUserRound } from "react-icons/lu";
+import Image from "next/image";
 
 type ButtonProps = {
-  type: 'button' | 'submit',
-  title: string,
-  icon?: string,
+  type: 'button' | 'submit';
+  title: string;
+  icon?: string;
   variant: string;
-  full?: boolean;
+  full?: string;
 }
 
-const Button = ({title, type, icon, variant, full}: ButtonProps) => {
+const Button = ({ type, title, icon, full, variant }: ButtonProps) => {
   return (
-    <button className="lg:px-6 px-4 py-2 bg-gray-700 text-white rounded-full font-semibold flex gap-2 
-    items-center"
-    type={type}
+    <button
+    className={`lg:px-6 px-4 py-3 ${variant} text-white rounded-full font-semibold flex gap-2 
+    items-center justify-center ${full && 'w-full'}`}
+      type={type}
     >
-        <LuUserRound className="w-5 h-5"/>
-        <h2 className="lg:text-lg text-md">{title}</h2>
+      {icon && <Image src={icon} alt={title} width={24} height={24} />}
+      <label className="font-bold whitespace-nowrap cursor-pointer">{title}</label>
     </button>
   )
 }
