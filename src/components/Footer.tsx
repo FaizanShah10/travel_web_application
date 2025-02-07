@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
             <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm text-gray-500 sm:text-center ">© 2025 Made by <a href="https://faizan-naveed.vercel.app/" className="hover:underline">Faizan Naveed</a>
+                <span className="text-sm text-gray-500 sm:text-center ">Made by <a href="https://faizan-naveed.vercel.app/" className="hover:underline">Faizan Naveed</a>
                 </span>
                 <div className="flex mt-4 sm:justify-center sm:mt-0">
                     <a href="#" className="text-gray-500 hover:text-gray-900 hover:">
