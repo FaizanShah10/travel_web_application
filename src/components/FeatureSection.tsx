@@ -4,8 +4,9 @@ import { FEATURES } from '@/constants'
 
 const FeatureSection = () => {
   return (
-    <div className='max-w-[100vw] px-6 lg:px-44 md:px-32 flex flex-col gap-2 lg:gap-12 mt-14'>
+    <div className='max-w-[100vw] relative px-6 lg:px-44 md:px-32 flex flex-col gap-2 lg:gap-12 mt-14'>
         {/* Heading Section */}
+        
         <div className='flex flex-col gap-0'>
             <Image
               src='/camp.svg'

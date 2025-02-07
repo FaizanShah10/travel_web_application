@@ -11,6 +11,7 @@ const HeroSection = () => {
                     src='./camp.svg'
                     width={22}
                     height={22}
+                    alt='Camp'
                     />
                     <h2 className='text-[5vh] lg:text-[5vw] md:text-[6vw]  tracking-tight font-bold leading-10 lg:leading-[72px] md:leading-[50px]  mb-10 '>Putuk Truno <br /> Camp Area</h2>
                     <p className='text-sm text-gray-600 w-[85vw] lg:w-[26vw] md:w-[50vw]'>We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app</p>
