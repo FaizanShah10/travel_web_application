@@ -1,7 +1,9 @@
+import Image from 'next/image';
+
 const CampCard = () => {
   return (
     <>
-      <img className="w-full h-full object-cover" src="./img-1.png" alt="Camp Image" />
+      <Image className="w-full h-full object-cover" src="/img-1.png" alt="Camp Image" width={800} height={600} />
 
       <div className="absolute top-4 left-4 lg:left-8 text-white  text-lg">
         <p className="font-bold">Putuk Truno Camp</p>
@@ -10,18 +12,15 @@ const CampCard = () => {
 
       <div className="absolute bottom-4 left-4 lg:left-8 text-white text-sm flex items-center space-x-4">
         <div className="flex">
-          <img className="w-8 h-8 rounded-full border-0 border-white" src="./person-1.png" alt="User 1" />
-          <img className="w-8 h-8 rounded-full border-0 border-white -ml-2" src="./person-2.png" alt="User 2" />
-          <img className="w-8 h-8 rounded-full border-0 border-white -ml-2" src="./person-3.png" alt="User 3" />
+          <Image className="w-8 h-8 rounded-full border-0 border-white" src="/person-1.png" alt="User 1" width={32} height={32} />
+          <Image className="w-8 h-8 rounded-full border-0 border-white -ml-2" src="/person-2.png" alt="User 2" width={32} height={32} />
+          <Image className="w-8 h-8 rounded-full border-0 border-white -ml-2" src="/person-3.png" alt="User 3" width={32} height={32} />
         </div>
         <span className="font-semibold">50+ Joined</span>
       </div>
     </>
-  )
-}
-
-
-
+  );
+};
 
 const CampSection = () => {
   return (
@@ -55,7 +54,5 @@ const CampSection = () => {
     </div>
   );
 };
-
-
 
 export default CampSection;
