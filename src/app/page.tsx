@@ -1,10 +1,14 @@
-import Hero from '@/components/Hero'
+import CampSection from '@/components/CampSection'
+import GuideSection from '@/components/GuideSection'
+import HeroSection from '@/components/HeroSection'
 
 
 const page = () => {
   return (
     <div>
-      <Hero/>
+      <HeroSection/>
+      <CampSection/>
+      <GuideSection/>
     </div>
   )
 }

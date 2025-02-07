@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Button from './Button'
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <div className='max-w-[100vw] px-10 lg:px-44 md:px-32 flex flex-col lg:flex-row gap-10 lg:gap-44'>
+    <div className='max-w-[100vw] px-6 lg:px-44 md:px-32 flex flex-col lg:flex-row gap-2 lg:gap-44'>
             <div className='flex flex-col gap-10'>
                 <div>
                     <Image
@@ -41,7 +41,7 @@ const Hero = () => {
                     <Button
                     type='button'
                     title='Download'
-                    variant='bg-green-600'
+                    variant='bg-green-600 text-white'
                     />
 
                     <Button
@@ -81,4 +81,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection

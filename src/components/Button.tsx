@@ -11,7 +11,7 @@ type ButtonProps = {
 const Button = ({ type, title, icon, full, variant }: ButtonProps) => {
   return (
     <button
-    className={`lg:px-6 px-4 py-3 ${variant} text-white rounded-full font-semibold flex gap-2 
+    className={`lg:px-6 px-4 py-3 ${variant} rounded-full font-semibold flex gap-2 
     items-center justify-center ${full && 'w-full'}`}
       type={type}
     >
